@@ -1,16 +1,20 @@
 .button {
-  &.wrapper {
-    width: 200px;
+  display: inline-block;
+  padding: 10px 22px 7px;
+  border-radius: 3px;
+  border: none;
+  text-decoration: none;
 
-    .button-yellow {
-      width: 100%;
-      padding: 4% 12%;
-      background-color: #fdd834;
-      border: none;
-      border-radius: 3px;
+  &--yellow {
+    background-color: #fdd834;
+    color: #06001a;
+    transition: 0.3s;
+
+    &:hover {
+      background: lighten(#fdd834, 7%)
     }
   }
-  &.text {
-    font-weight: bold;
+  &--text-uppercase {
+    text-transform: uppercase;
   }
 }

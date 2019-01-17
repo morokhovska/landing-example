@@ -2,4 +2,15 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
 
 
+@import "../sass/global/fonts";
+@import "../sass/global/vars";
+@import "../sass/global/base";
+@import "../sass/global/common";
+
+
+@import "../sass/components/button";
+
+
+
+
 @import "sections/footer";

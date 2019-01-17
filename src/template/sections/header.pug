@@ -1,4 +1,17 @@
 header.header
   .header__top
     .container
-  .header__bottom
+      .logo: img.logo__picture(src="../../assets/img/Logo.png", alt="logo", width="100px", height="100px")
+      nav.nav
+        a.nav__link.nav__link--active(href="#") About us
+        a.nav__link(href="#") Intellectual services
+        a.nav__link(href="#") News
+        a.nav__link(href="#") Blog
+        a.nav__link(href="#") Education
+        a.nav__link(href="#") Partner
+        a.nav__link(href="#") Career
+      select.select(name="lang select")
+        option.select__item(value="en") EN
+        option.select__item(value="fr") FR
+  .container
+    .header__bottom
