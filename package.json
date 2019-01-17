@@ -20,7 +20,10 @@
   "homepage": "https://github.com/morokhovska/landing-example#readme",
   "description": "",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.11.0",
+    "normalize-scss": "^7.0.1",
+    "normalize.scss": "^0.1.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.16.0"
