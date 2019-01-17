@@ -1,0 +1,22 @@
+.hero {
+  min-height: 50px;
+  padding: 10px 0px 20px;
+  text-align: center;
+  color: #000000;
+  line-height: 1;
+  //background: #cccccc url() center/cover no-repeat;
+
+  &__title {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: $ff-main;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  &__subtitle {
+    font-family: $ff-main-thin;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
