@@ -1,0 +1,11 @@
+.image {
+  max-width: 380px;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    height: 265px;
+  }
+}
