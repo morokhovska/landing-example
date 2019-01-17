@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+    margin-right: 10px;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: $ff-main-thin;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000000;
+    transition: all 0.3s ease-out;;
+
+    &:hover,
+    &--active {
+      text-decoration: underline red;
+    }
+  }
+
+}
