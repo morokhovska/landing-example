@@ -1,15 +1,5 @@
 "use strict";
 
-var slideIndex = 1;
-
-var plusSlides = function plusSlides(n) {
-  showSlides(slideIndex += n);
-};
-
-var currentSlide = function currentSlide(n) {
-  showSlides(slideIndex = n);
-};
-
 var showSlides = function showSlides(n) {
   var i = void 0;
   var slides = document.getElementsByClassName("mySlides");
@@ -26,10 +16,16 @@ var showSlides = function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += "active";
+  dots[slideIndex - 1].className += " active";
 };
+
+var slideIndex = 1;
 showSlides(slideIndex);
+
+var currentSlide = function currentSlide(n) {
+  showSlides(slideIndex = n);
+};

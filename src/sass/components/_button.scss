@@ -1,9 +1,11 @@
 .button {
+  width: 60%;
   display: inline-block;
   padding: 10px 22px 7px;
   border-radius: 3px;
   border: none;
   text-decoration: none;
+  text-align: center;
 
   &--yellow {
     background-color: #fdd834;

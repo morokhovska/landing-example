@@ -7,9 +7,11 @@
 @import "../sass/global/base";
 @import "../sass/global/common";
 
-
+//Components
 @import "../sass/components/button";
 @import "../sass/components/select";
+@import "../sass/components/number";
+
 
 
 
@@ -20,5 +22,7 @@
 @import "sections/main";
 @import "sections/hero-block";
 @import "sections/slider";
+@import "sections/aside-text";
+
 //Footer
 @import "sections/footer";

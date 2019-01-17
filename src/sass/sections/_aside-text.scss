@@ -1,0 +1,58 @@
+.aside {
+  margin: 0 auto;
+  display: flex;
+  max-width: 50%;
+  min-width: 320px;
+  min-height: 285px;
+
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &--subtitle {
+      text-transform: uppercase;
+      font-family: $ff-main-thin;
+      font-weight: 300;
+    }
+
+    &--title {
+      font-family: $ff-main;
+      font-weight: 400;
+    }
+
+    &--text {
+      font-family: $ff-main;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    &--link {
+      text-decoration: underline;
+      color: #000000;
+      padding-right: 10px;
+  
+      &:hover {
+        text-decoration: underline;
+        
+      }
+  
+      &:visited {
+        text-decoration: underline;
+        color: #000000;
+      }
+  
+      &:active {
+        text-decoration: underline;
+        color: #000000;
+      }
+    }
+
+  }
+}
