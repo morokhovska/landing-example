@@ -1,4 +1,33 @@
 .footer {
+  font-family: $ff-main-thin;
+  font-weight: 300;
+  font-size: 1rem;
   color: #ffffff;
   background-color: #3a3e59;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__container {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__links {
+    .link {
+      margin-right: 5px;
+    }
+  }
+  &__contacts {
+    .contact {
+      margin-right: 15px;
+    }
+    .fab {
+      margin-right: 5px;
+    }
+  }
 }
