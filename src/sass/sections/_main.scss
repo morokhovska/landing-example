@@ -28,6 +28,16 @@
     justify-content: center;
     align-items: center;
 
+    &--header {
+      width: inherit;
+      margin: 20px 0px;
+      font-family: $ff-main-thin;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: #31354d;
+      text-transform: uppercase;
+      text-align: start;
+    }
     &--wrapper {
       width: inherit;
       display: flex;

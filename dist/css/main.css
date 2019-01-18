@@ -2820,6 +2820,15 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .news-content__first--header, .news-content__second--header, .news-content__third--header {
+      width: inherit;
+      margin: 20px 0px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: #31354d;
+      text-transform: uppercase;
+      text-align: start; }
     .news-content__first--wrapper, .news-content__second--wrapper, .news-content__third--wrapper {
       width: inherit;
       display: flex;
