@@ -2792,9 +2792,8 @@ li {
     vertical-align: top;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    text-transform: capitalize;
     color: #000000;
-    transition: all 0.3s ease-out; }
+    transition: all 0.2s ease-out; }
     .nav__link:hover, .nav__link--active {
       text-decoration: underline red; }
 
@@ -2923,17 +2922,11 @@ li {
     display: flex;
     flex-wrap: wrap; }
     .aside__links--link {
-      text-decoration: underline;
       color: #000000;
-      padding-right: 10px; }
+      padding-right: 10px;
+      transition: all 0.2s ease-out; }
       .aside__links--link:hover {
-        text-decoration: underline; }
-      .aside__links--link:visited {
-        text-decoration: underline;
-        color: #000000; }
-      .aside__links--link:active {
-        text-decoration: underline;
-        color: #000000; }
+        text-decoration: underline red; }
 
 .news-main {
   display: flex;

@@ -33,24 +33,14 @@
   &__links {
     display: flex;
     flex-wrap: wrap;
+
     &--link {
-      text-decoration: underline;
       color: #000000;
       padding-right: 10px;
-  
+      transition: all 0.2s ease-out;
+
       &:hover {
-        text-decoration: underline;
-        
-      }
-  
-      &:visited {
-        text-decoration: underline;
-        color: #000000;
-      }
-  
-      &:active {
-        text-decoration: underline;
-        color: #000000;
+        text-decoration: underline red;
       }
     }
 
