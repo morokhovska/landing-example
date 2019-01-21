@@ -2720,7 +2720,8 @@ li {
   border-radius: 3px;
   border: none;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .button--yellow {
     background-color: #fdd834;
     color: #06001a;
@@ -2774,6 +2775,58 @@ li {
 .image__container--vertical img {
   width: 300px;
   height: 600px; }
+
+.modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal-content {
+    width: 30%;
+    margin: 20% auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.17); }
+    .modal-content > span {
+      text-align: end; }
+  .modal .closeBtn {
+    color: #ccc;
+    font-size: 2rem; }
+    .modal .closeBtn:hover, .modal .closeBtn:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+    .modal .closeBtn.cancel {
+      font-size: 1rem;
+      text-decoration: underline; }
+  .modal-form {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column; }
+    .modal-form__input {
+      display: flex;
+      flex-direction: column; }
+      .modal-form__input textarea {
+        resize: none; }
+    .modal-form__button {
+      padding: 10px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end; }
+      .modal-form__button--cancel {
+        margin-right: 8px; }
+      .modal-form__button--submit input {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px; }
 
 .header__top {
   padding: 10px 0px 20px;

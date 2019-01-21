@@ -1,0 +1,21 @@
+.modal
+  .modal-content
+    span.closeBtn &times;
+    form.modal-form(action="", method="post")
+      .modal-form__input
+        label(for="email") Email*
+        input#email(type="email", name="email", required)
+      .modal-form__input
+        label(for="name") Name*
+        input#name(type="text", name="name", required)
+      .modal-form__input
+        label(for="company") Company*
+        input#company(type="text", name="company", required)
+      .modal-form__input
+        label(for="subject") Subject*
+        textarea#subject(cols="30", rows="3", type="text", name="subject", required)
+      .modal-form__button
+        .modal-form__button--cancel
+          a.closeBtn.cancel Cancel
+        .modal-form__button--submit
+          input(type="submit", value="Submit")
