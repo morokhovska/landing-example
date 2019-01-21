@@ -2946,7 +2946,7 @@ li {
     cursor: pointer; }
     .slideshow .dots__dot:hover {
       background-color: rgba(0, 0, 0, 0.5); }
-    .slideshow .dots__dot .active {
+    .slideshow .dots__dot.active {
       background-color: rgba(0, 0, 0, 0.5); }
 
 .aside {

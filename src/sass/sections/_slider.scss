@@ -44,7 +44,7 @@
       &:hover {
         background-color: rgba(0, 0, 0, 0.5);
       }
-      .active {
+      &.active {
         background-color: rgba(0, 0, 0, 0.5);
       }
     }
