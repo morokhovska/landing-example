@@ -5,15 +5,17 @@ header.header
       .header__top.section
         nav.nav
           a.nav__link.nav__link--active(href="#") About us
-          a.nav__link(href="#") Intellectual services
-          a.nav__link(href="#") News
-          a.nav__link(href="#") Blog
-          a.nav__link(href="#") Education
-          a.nav__link(href="#") Partner
-          a.nav__link(href="#") Career
-          select.nav__link.select(name="lang select")
-            option.select__item(value="en") EN
-            option.select__item(value="fr") FR
+          a.nav__link(href="coming-soon.html") Intellectual services
+          a.nav__link(href="coming-soon.html") News
+          a.nav__link.disabled-link(href="#") Blog
+          a.nav__link.disabled-link(href="#") Education
+          a.nav__link.disabled-link(href="#") Partner
+          a.nav__link.disabled-link(href="#") Career
+          .nav__link.language-switcher__container
+            a.nav__link.language-switcher(href="#") EN
+            .language-switcher |
+            a.nav__link.language-switcher(href="#") FR
+
         .burger
           .burger__line.line1
           .burger__line.line2

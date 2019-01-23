@@ -1,7 +1,6 @@
 .slideshow {
   margin: 0 auto;
-  max-width: 380px;
-  min-width: 50%;
+  width: 380px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,5 +47,11 @@
         background-color: rgba(0, 0, 0, 0.5);
       }
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .slideshow {
+    margin: 1rem auto;
+    width: 320px;
   }
 }

@@ -50,3 +50,17 @@
     margin-bottom: 70px;
   }
 }
+@media screen and (max-width: 1024px) {
+  
+  .news-content {
+    &__first,
+    &__second,
+    &__third {
+  
+      &--wrapper {
+        justify-content: center;
+      }
+    }
+  }
+
+}
