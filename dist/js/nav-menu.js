@@ -4,7 +4,6 @@ var navSlide = function navSlide() {
   var burger = document.querySelector('.burger');
   var nav = document.querySelector('.nav');
   var navLinks = document.querySelectorAll('.nav__link');
-  console.log('123');
   burger.addEventListener('click', function () {
     nav.classList.toggle('active');
 

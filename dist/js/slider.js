@@ -1,57 +1,37 @@
 "use strict";
 
 var slideIndex = 0;
+var dots = document.getElementsByClassName("dots__dot");
+var slides = document.getElementsByClassName("mySlides");
 showSlides();
-var slides, dots;
+currentSlide();
 
 function showSlides() {
-  var i;
-  slides = document.getElementsByClassName("mySlides");
-  dots = document.getElementsByClassName("dots__dot");
-  for (i = 0; i < slides.length; i++) {
+
+  for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (var _i = 0; _i < dots.length; _i++) {
+    dots[_i].className = dots[_i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+
   setTimeout(showSlides, 3000);
 }
 
-function plusSlides(position) {
-  slideIndex += position;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  } else if (slideIndex < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+function currentSlide() {
+  var _loop = function _loop(i) {
+    dots[i].addEventListener('click', function () {
+      return i;
+    });
+  };
 
-function currentSlide(index) {
-  if (index > slides.length) {
-    index = 1;
-  } else if (index < 1) {
-    index = slides.length;
+  for (var i = 0; i < dots.length; i++) {
+    _loop(i);
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index - 1].style.display = "block";
-  dots[index - 1].className += " active";
 }
